@@ -6,6 +6,7 @@
 <h1>Mathilde Iglseder-6R</h1>
 <h2>Persönliche Daten</h2>
   <p>Geburtsdatum: 17.10.2009<br>Lieblingsfarbe: Gelb</p>
+    <style>="background-color: yellow;"</style>
 <h3>Meine Lieblingsfächer</h3>
   <ol>
   <li>Biologie</li>
@@ -13,9 +14,45 @@
   <li>Sport</li>
   </ol>
 <h4>Meine Hobbys</h4>
-  <ol>id="liste-hobbys"></ol>
+  <ul>id="liste-hobbys"</ul>
 <h5>Freies Bild</h5>
-  
+<figure>
+
+    <img
+        src="img/bild1.jpg"
+        width="400"
+        title="Freies Bild"
+        alt="Volleyball"
+    >
+
+    <figcaption>
+        Foto von
+        <a href="https://www.istockphoto.com/photo/young-friends-having-fun-while-playing-beach-volleyball-at-sunset-gm1091704038-292887137" target="_blank">
+            Skynesher
+        </a>,
+        
+        <a href="https://pixabay.com/de/photos/mann-gesicht-m%C3%A4nnlich-ansicht-852770/" target="_blank">
+           Large group of friends playing beach volleyball at sunset.
+        </a>,
+
+        Lizenz:
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode.de" target="_blank">
+            CC BY 4.0
+        </a>
+    </figcaption>
+
+</figure>
+    <script>
+  const hobbys = ["Volleyball", "Laufen gehen", "fortgehen", "Freune treffen"]; 
+  const liste = document.getElementById("liste-hobbys");
+  hobbys.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>  
+</body>
+
   
  
 
